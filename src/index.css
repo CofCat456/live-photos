@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input {
+    @apply w-full rounded bg-[#F7F7F7] py-[7px] pl-[17px] text-sm leading-6 sm:text-base;
+  }
+
+  .yellow-btn {
+    @apply cursor-pointer border border-photo-primary bg-photo-primary font-bold text-photo-secondary ring-photo-sp duration-300 hover:bg-photo-sp hover:text-white active:ring-2;
+  }
+
+  .gray-btn {
+    @apply cursor-pointer border-2 border-photo-button bg-transparent font-bold text-photo-button ring-photo-primary duration-300 hover:border-photo-primary hover:bg-photo-primary active:ring-2;
+  }
+}
+
+.v-enter-active,
+.v-leave-active {
+  transition: height 1s;
+}
